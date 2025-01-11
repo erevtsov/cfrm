@@ -1,0 +1,32 @@
+The analysis was performed by first using weekly returns and weights provided to run performance attribution. This gave a stream of weekly returns for each asset category, analysis dimension, and attribution bucket.  
+
+Given the stream of weekly excess returns, I performed t-tests do determine whether the mean of the excess return vector is statistically differnt from zero. I calculated the bounds of the 95% confidence interval, if zero is not part of this interval I can be fairly confident that the outperformance in that dimension is statistically significant.
+
+Now, I will review the performance attribution of the asset classes.
+
+
+60/30/10 Multi-Asset
+    * Overall the actual performance was higher by about 3bps on a weekly basis vs the benchmark
+    * Under weighting of Alternatives was a significant contributor through the time period, but not statistically significant according to the t-test. The 95% confidence interval also includes zero.
+    * The Stock Selection bucket is the largest contributor to outperformance and is statisticalsly significant.
+
+50/45/5 Fund
+    * Again setatistically significant outperformance in the Stock Selection dimension. Selection within all 3 categories contributed positively.
+    * Allocations contributed positively overall with Alternatives leading the charge. 
+
+Alternatives:
+    * Within alternatives asset class, the under-weighting to Listed Real Estate contributed positively but the other allocation decisions had negative contributions to return. What's interesting is that even though allocation desicion to real estate led to outperformance by 260bps over the period, it is not considered statistically significant both from a p-value confidence interval views. This is likely due to significant outliers contributing to performance during initial COVID period. 
+    * Selection is statistically significant within all 3 categories, with Commodities and Real Estate providing tailwind and Listed Infrastructure detracting from performance.
+
+Bonds:
+    * Overall, allocation decision to bonds and within bond categories led to under-performance. However, Selection within long-term treasuries led to significantly positive contributions, which caused the overall selection bucket to be positive even though selection within IG and short treasury detracted.
+    * Allocation between different credit quality buckets did not have a significant impact on performance, but selection within treasuries contributed positively and within IG detracted, netting out at a positive overall contribution.
+    * For the duration dimension, allocation to both long and short treasuries detracted from performance. However, selection within long-term treasuries was the single largest contributor to active outperformance.
+    
+Stocks:
+    * Allocation within stocks contributed posively overall but again selection stole the show. Small cap selection detracted slightly but both non-US and US large-cap selection led to significant outperformance. 
+    * Allocation to US stocks contributed positively while non-US detracted, which is expected with the broad US stock market performance over the recent years. 
+    
+
+
+Overall, the Selection teams are contributing positively to performance across most of the dimensions of analysis. Selection within Listed Infrastructure and Investment Grade Corp. Bonds are the largest detractors. Selection drove a large portion of outperformance of actual funds vs their benchmarks. Allocation is a mixed bag with the interaction effect having the least impact. 

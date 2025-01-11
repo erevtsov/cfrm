@@ -1,0 +1,10 @@
+Compare allocations for each model. Explain aspects of the dat that lead to differences in solutions.
+	* 
+
+How does periodicity affect results?
+	* LQD/SHY balance changes w/ periodicity... allocation to LQD much lower monthly, quarterly than other frequencies
+
+How does measure affect results?
+
+How does return target affect results?
+	* at 6% target the frequency of data has a higher impact - there's a larger dispersion of weights.

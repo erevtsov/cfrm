@@ -1,0 +1,53 @@
+The task was to compare portfolio optimization methods of mean-var, mean-MAD, and mean-CVaR using different using different frequency of returns. The investment universe consists of ETFs IWB, IWM, EFA EEM, VNQ, LQD, SHY. Please use the questions below and subsequent points that answer the questions to construct a semi-format report comparing the optimization methods. Add any additional insights you can think of. 
+
+
+How does measure affect results? How do aspects of data explain this?
+	* all 3 approaches allocate most of the capital to 3 assets: IWB, LQD, and SHY. 
+	* mean-var on avg favors IWB more than the other optimization methods. Mean-CVaR allocates the least.
+	* mean-cvar seems to prefer LQD more than the others - it's allocation is higher vs other methods, at the expense of SHY; especially as portfolio return target increases. mean-var preferred SHY over LQD.
+	* even though there are some allocation differences, the overall stastistics of the resulting portfolios, such as standard deviation, MAD, VaR, and CVaR were really similar across the different metrics. These results coincide with Mark Kritzman's paper we read earlier in the class, "Are Optimizers Error Maximisers". He argued that small differences in inputs yield differences in allocations but similar portfolio characteristics. Our results show that (at least with the given universe and time period) using the differnt optimization metrics can lead to slightly differnt allocations but the resulting characteristics are similar. 
+
+
+How does periodicity affect results?
+	* LQD/SHY balance changes w/ periodicity... allocation to LQD much lower monthly, quarterly than other frequencies.
+	* on avg, also slightly higher allocation to IWB with monthly/quarterly frequencies
+
+
+
+How does return target affect results?
+	* more equities allocated with higher return, lower fixes income (LQD and SHY)
+	* at 6% target the frequency of data has a higher impact - there's a larger dispersion of weights.
+
+
+
+Compare to predictions
+	* IWB was the only choice for equities; its return per unit of risk (both in standard deviation, mean deviation, and CVaR terms) is simply higher than other asset classes. 
+	* LQD allocation is the opposite of what I expected. Although its return expectations are lower than equties, its low correlation with other assets (which means drawdowns are less likely to happen during same periods, which should have a positive effect on the portfolio CVaR) and surprisingly low standalone CVaR provide downside protection according and the mean-CVaR risk metric. 
+
+
+Additional Insights
+
+
+
+misc things to note:
+	* not annualizing VaR/CVaR as it doesn't make much sense. For example, if you annualize daily VaR you are assuming the worst case scenario happens every day for a year.
+
+
+
+Comparison of Allocations for Each Model
+
+The allocations for each model vary depending on the target return. For example, at a target return of 2% the mean-CVaR model allocates 96.213% to SHY, a short-term treasury bond fund,  and 3.787% to IWB, an ETF that tracks the Russell 1000 Growth stock index. In contrast, the mean-variance model allocates 95.801% to SHY and 2.889% to IWB. This suggests that the mean-CVaR model is more conservative than the mean-variance model, as it places a higher weight on the less volatile SHY asset class.
+
+There are also differences in allocations between the mean-MAD model and the other two models. For example, at a target return of 6% the mean-MAD model allocates 43.716% to IWB and 41.818% to LQD, an investment-grade corporate bond fund,  while the mean-variance model allocates 47.083% to IWB and 29.761% to LQD. This suggests that the mean-MAD model may place a higher weight on assets with higher expected returns, even if they are also more volatile.
+
+Aspects of the Data Leading to Differences in Solutions
+
+The differences in solutions between the models can be explained by the different risk measures that each model uses. The mean-variance model minimizes portfolio variance, while the mean-MAD model minimizes the mean absolute deviation of portfolio returns. The mean-CVaR model minimizes the conditional value at risk (CVaR) of portfolio returns. CVaR is a risk measure that focuses on the potential for extreme losses.
+
+As a result, the mean-variance model is more likely to allocate to assets with higher expected returns, even if they are also more volatile. The mean-MAD model is more likely to allocate to assets with lower volatility, even if they also have lower expected returns. The mean-CVaR model is more likely to allocate to assets with lower downside risk, even if they also have lower expected returns.
+
+Differences in Results Across Allocation Methodologies
+
+The results are not exactly the same for each of the allocation methodologies. This is because the models are optimizing for different risk objectives. The mean-variance model is trying to minimize portfolio variance, while the mean-MAD model is trying to minimize the mean absolute deviation of portfolio returns, and the mean-CVaR model is trying to minimize the conditional value at risk (CVaR) of portfolio returns. As a result, we would expect the models to have different allocations.
+
+Overall, the choice of allocation methodology will depend on the investor's risk tolerance and investment objectives. If an investor is risk-averse, they may prefer a model that minimizes downside risk, such as the mean-CVaR model. If an investor is more risk-tolerant, they may prefer a model that maximizes expected returns, such as the mean-variance model.
