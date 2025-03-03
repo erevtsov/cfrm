@@ -10,10 +10,13 @@ dependencies = [
     "ibis-framework[duckdb]>=10.0.0",
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.1",
+    "notebook>=7.3.2",
+    "openpyxl>=3.1.5",
     "pandas>=2.2.3",
     "polars>=1.21.0",
     "pyarrow>=19.0.0",
     "python-dotenv>=1.0.1",
+    "scipy>=1.15.2",
     "yfinance>=0.2.52",
 ]
 [dependency-groups]
