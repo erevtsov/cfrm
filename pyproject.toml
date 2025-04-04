@@ -29,14 +29,13 @@ dev = [
 ]
 
 [[tool.uv.index]]
-name = "pypi"
-url = "https://aam.jfrog.io/artifactory/api/pypi/pypi/simple"
-default = true
+name = "pybuild"
+url = "https://pypi.org/simple"
 
 [[tool.uv.index]]
-name = "pybuild"
-url = "https://aam.jfrog.io/artifactory/api/pypi/pybuild/simple"
-
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
 
 [tool.pytest.ini_options]
 minversion = "6.0"
