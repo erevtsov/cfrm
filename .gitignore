@@ -1,3 +1,6 @@
 .env
 .DS_Store
-/notebooks/521/my_fashion_mnist/
+notebooks/521/my_fashion_mnist/
+notebooks/522/data/
+notebooks/522/debug/
+notebooks/522/intraday/
